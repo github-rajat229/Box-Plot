@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Plotting</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            margin-bottom: 2vh;
+        }
+        .con {
+            height: 60vh;
+            width: 85vw;
+            max-width: 800px;
+            background-color: teal;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            color: white;
+        }
+        .box {
+            height: 80%;
+            width: 80%;
+            background-color: skyblue;
+            position: relative;
+        }
+        .box1 {
+            height: 80%;
+            width: 80%;
+            background-color: blue;
+            border: 2.5vh solid navy;
+            margin: 5vh 2.5vw 2.5vh 5vw;
+            padding: 7.5vh 2.5vw 2.5vh 8vw;
+            position: relative;
+        }
+        .box2 {
+            height: 80%;
+            width: 80%;
+            background-color: orange;
+            position: relative;
+        }
+        .margin {
+            position: absolute;
+            left: 46.5%;
+            top: 1.5vh;
+        }
+        .border {
+            position: absolute;
+            left: 45%;
+            top: -2.3vh; 
+            color: white;
+        }
+        .padding {
+            position: absolute;
+            left: 45%;
+            top: 2vh;
+        }
+        .content {
+            position: absolute;
+            top: 40%;
+            left: 40%;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Box Plotting</h1>
+    <div class="con">
+        <div class="box">
+            <p class="margin">Margin</p>    
+            <div class="box1">
+                <p class="border">Border</p>
+                <p class="padding">Padding</p>
+                <div class="box2">
+                    <p class="content">Content</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
